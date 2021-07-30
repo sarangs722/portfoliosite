@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>Sarang's Resume</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $(window).on('scroll',function(){
+
+    var link = $('.navbar a.dot');
+    var top = $(window).scrollTop();
+
+    $('.sec').each(function(){
+      var id = $(this).attr('id');
+      var height = $(this).height();
+      var offset = $(this).offset().top - 150;
+      if(top >= offset && top < offset + height){
+        link.removeClass('active');
+        $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');
+      }
+    });
+
+  });
+
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+	<!--NAVIGATION SIDE BAR-->
+	<nav class="navbar">
+		<ul>
+			<li>
+				<a href="#front" class="dot active" data-scroll="home">
+					<span>home</span>
+				</a>
+			</li>
+			<li>
+				<a href="#aboutme" class="dot" data-scroll="aboutme">
+					<span>about</span>
+				</a>
+			</li>
+			<li>
+				<a href="#academics" class="dot" data-scroll="academics">
+					<span>academics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#certifications" class="dot" data-scroll="certifications">
+					<span>certifications</span>
+				</a>
+			</li>
+			<li>
+				<a href="#projects" class="dot" data-scroll="projects">
+					<span>projects</span>
+				</a>
+			</li>
+			<li>
+				<a href="#contact" class="dot" data-scroll="contact">
+					<span>contact</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+ 	
+
+	<!--FRONT PAGE LOOK MAIN-->
+	<section id="front" class="sec">
+		<div class="mainfront">
+			<h1> Hi, I'm Sarang.</h1>
+			<div class="slider-wrapper">
+				A
+				<div class="slider">
+					<div class="lr">Learner</div>
+	
+					<div class="wd">Developer</div>
+					<div class="sd">Programmer</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="startpic">
+			<img src="images/startpic.png" width="420px" height="620px">
+		</div>
+	</section>
+
+	
+	<!--ABOUT ME SECTION-->
+	<section class="sec">
+		<section id="aboutme" class="aboutme">
+			<h2> About Me </h2>
+			<div class="aboutcontent">
+				I'm pursuing my Bachelor of Technology focused in Information Technology from ABES Engineering College,
+				Ghaziabad. <br>My areas of interest include <strong>Competitive Programming, App Development, Web
+					Development and Cybersecurity</strong>. I have good knowledge on Data Structures & Algorithms with
+				expertise in C++ programming language. I am also familar with Python, JavaScript & Kotlin programming
+				languages. I am curious about new technologies and always try to learn them and make something productive.
+				Currently, I'm focused on learning Android Development.
+			</div>
+	
+		</section>
+	</section>
+
+
+	<!--ACADEMICS SECTION-->
+	<section class="sec">
+		<section id="academics" class="academics">
+			<h2> Academics </h2>
+			<div class="academicscontent">
+				<div class="center-line"></div>
+	
+				<div class="row college">
+					<section>
+						<div class="details">
+							<span class="title">B Tech in Information Technology</span>
+						</div>
+						<p>ABES Engineering College</p>
+						<div class="bottom">
+							<span>CGPA: 9.02/10 (till 3rd Sem)</span>
+						</div>
+					</section>
+				</div>
+	
+				<div class="row intermediate">
+					<section>
+						<div class="details">
+							<span class="title">Intermediate</span>
+						</div>
+						<p>Khaitan Public School (CBSE)</p>
+					</section>
+				</div>
+	
+				<div class="row highschool">
+					<section>
+						<div class="details">
+							<span class="title">High School</span>
+						</div>
+						<p>Vidyawati Nigam Memorial Public School (CBSE)</p>
+						<div class="bottom">
+							<span>CGPA: 10/10</span>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</section>
+
+
+	<!--CERTIFICATIONS SECTION-->
+	<section class="sec">
+		<section id="certifications" class="certifications">
+			<h2>Certifications</h2>
+	
+			<section id="certslider">
+				<input type="radio" name="certslider" id="s1">
+				<input type="radio" name="certslider" id="s2">
+				<input type="radio" name="certslider" id="s3" checked="">
+				<input type="radio" name="certslider" id="s4">
+				<input type="radio" name="certslider" id="s5">
+	
+				<label for="s1" id="slide1">
+					<img src="images/introcyber.jpg" height="100%" width="100%">
+				</label>
+	
+				<label for="s2" id="slide2">
+					<img src="images/cyberessential.jpg" height="100%" width="100%">
+				</label>
+	
+				<label for="s3" id="slide3">
+					<img src="images/googleitsupport.jpg" height="100%" width="100%">
+	
+	
+				</label>
+	
+				<label for="s4" id="slide4">
+					<img src="images/masteringdsa.jpg" height="100%" width="100%">
+				</label>
+	
+				<label for="s5" id="slide5">
+					<img src="images/introindustry.jpg" height="100%" width="100%">
+				</label>
+			</section>
+	
+		</section>
+	</section>
+
+
+	<!--PROJECTS SECTION-->
+	<section class="sec">
+		<section id="projects" class="projects">
+			<h2> Projects </h2>
+			
+				<div id="portfolio" class="cardportfolio">
+					<a href="#front">
+						<div class="cardportfolio-image">
+							<img src="images/portfoliopic.png" alt="" width="100%" height="100%">
+						</div>
+						<div class="cardportfolio-content">
+							<h3>Portfolio website</h3>
+						</div>
+					</a>
+				</div>
+
+				<div id="amusementpark" class="cardamusementpark">
+					<a href="https://github.com/sarangs722/Amusement-Park-Network-Design" target="_blank">
+						<div class="cardamusementpark-image">
+							<img src="images/amusementparkpic.png" alt="" width="100%" height="100%">
+						</div>
+						<div class="cardamusementpark-content">
+							<h3>Network Design for Amusement Parks</h3>
+						</div>
+					</a>
+				</div>
+		
+		</section>
+	</section>
+
+	<section class = "sec">
+		<section id = "contact" class = "contact">
+			<h2> Contact </h2>
+			<div class = "socialmedia">
+				<ul>
+					<li><a href="https://www.codechef.com/users/sarangs722" target="_blank"><i class="codechef" aria-hidden="true"><img src="images/codechef.ico"/></i></a></li>
+					<li><a href="https://www.hackerrank.com/sarangs722" target="_blank"><i class="hackerrank" aria-hidden="true"></i><img src="images/hackkerankicon.svg" ></a></li>
+					<li><a href="mailto:sarangs722@gmail.com"><i class="gmail" aria-hidden="true"></i><img src="images/gmailicon.png" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/in/sarangs722/" target="_blank"><i class="linkedin" aria-hidden="true"></i><img src="images/linkedin.png" alt=""></a></li>
+				  </ul>
+			</div>
+		</section>
+	</section>
+	
+</body>
+</html>
