@@ -1,9 +1,9 @@
 
 
 body {
-	background-color: #F3F3F3;
-	color: black;
-	font-family: 'Mate SC', serif;
+	background-color: #FDD935;
+	color: #000000;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 a {
@@ -139,13 +139,14 @@ a {
 }
 
 .slider {
+	margin-top: 15px;
 	height: 72px;
 	padding-left: 10px;
 	overflow: hidden;
 }
 
 .slider div {
-	height: 40px;
+	height: 30px;
 	margin-bottom :60px;
 	padding: 2px 5px;
 	box-sizing: border-box;
@@ -165,12 +166,12 @@ a {
 }
 
 @keyframes slide {
-	0% {margin-top: -280px;}
+	0% {margin-top: -260px;}
 	5% {margin-top: -200px;}
-	33% {margin-top: -200px;}
-	38% {margin-top: -100px;}
-	66% {margin-top: -100px;}
-	71% {margin-top: 0px;}
+	33% {margin-top: -187px;}
+	38% {margin-top: -110px;}
+	66% {margin-top: -95px;}
+	71% {margin-top: -20px;}
 	100% {margin-top: 0px;}
 }
 
@@ -210,7 +211,6 @@ a {
 }
 
 .academicscontent {
-	background: #f3f3f3;
 	max-width: 1080px;
 	margin:50px auto;
 	padding: 0 20px ;
@@ -228,7 +228,7 @@ a {
 .academicscontent .row {
 	display: flex;
 	justify-content: flex-start;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	box-shadow: rgba(0, 0, 0, 0.16) 5px 7px 8px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 
@@ -400,13 +400,12 @@ a {
 .cardportfolio {
 	display: grid;
 	margin: 0 60% 0 0;
-	grid-template-columns: 180;
+	grid-template-columns: 2;
 	grid-template-rows: 260px 70px;
 	grid-template-areas: "image" "text";
-	border-radius: 1px;
 	font-size: 75%;
 	background: white;
-	border-radius: 5%;
+	border-radius: 10%;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	text-align: center;
 	transition: 0.5s ease;
@@ -443,13 +442,12 @@ a {
 .cardamusementpark {
 	display: grid;
 	margin: 0 5% 0 50%;
-	grid-template-columns: 180;
+	grid-template-columns: 2;
 	grid-template-rows: 260px 70px;
 	grid-template-areas: "image" "text";
-	border-radius: 1px;
 	font-size: 75%;
 	background: white;
-	border-radius: 5%;
+	border-radius: 10%;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	text-align: center;
 	transition: 0.5s ease;
