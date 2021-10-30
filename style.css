@@ -220,15 +220,6 @@ a {
 	padding: 0 20px ;
 }
 
-.academicscontent .center-line {
-	position: absolute;
-	height: 61%;
-	width: 4px;
-	background: rgb(59, 59, 59);
-	left: 52.5%;
-	transform: translateX(-50%);
-}
-
 .academicscontent .row {
 	display: flex;
 	justify-content: flex-start;
