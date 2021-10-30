@@ -501,8 +501,8 @@ a {
   
   .contact ul li a {
 	position: relative;
-	width:80px;
-	height:80px;
+	width:90px;
+	height:90px;
 	display:block;
 	text-align:center;
 	margin:0 10px;
@@ -519,11 +519,15 @@ a {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 	text-decoration:none;
   }
+
+ 
   
   .contact ul li a .fab,
   .contact ul li a img {
-	width: 100%;
-	height:100%;
+	width: 90%;
+	height:90%;
+	padding-top: 5px;
+	padding-left: 5px;
 	display:block;
 	background: linear-gradient(0deg, #fff, #ddd);
 	border-radius: 50%;
@@ -532,6 +536,10 @@ a {
 	color: #262626;
 	transition: .5s;
   }
+
+  
+
+
   
 
 
