@@ -536,8 +536,15 @@ a {
 	color: #262626;
 	transition: .5s;
   }
-
+/*
+ .mainfront h1 {
+	display: inline-block;
+	margin: 5 0.1rem;
   
+	animation: pulse infinite; 
+	animation-duration: 2s; 
+  }
+*/
 
 
   
