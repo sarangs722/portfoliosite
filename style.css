@@ -388,11 +388,11 @@ a {
 	text-align: center;
 }
 
-#portfolio {
+#leftcard {
 	margin-top: 5%;
 }
 
-.cardportfolio {
+.leftcard {
 	display: grid;
 	margin: 0 60% 0 0;
 	grid-template-columns: 2;
@@ -422,7 +422,7 @@ a {
 	border-bottom-right-radius: 15px;
 }
 
-.cardportfolio:hover {
+.leftcard:hover {
 	transform: scale(1.07);
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
