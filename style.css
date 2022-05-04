@@ -267,7 +267,7 @@ a {
 
 .aboutcontent {
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 	letter-spacing: 0.7px;
 }
 
@@ -494,6 +494,7 @@ a {
 .cardportfolio-image {
 	grid-area: image;
 	background: url("");
+	padding: 5% 5% 0 5%;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	background-size: cover;
@@ -509,12 +510,13 @@ a {
 .cardportfolio:hover {
 	transform: scale(1.07);
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	background: rgba(82, 96, 244, 0.6);
 }
 
 
 
 
-#amsuementpark {
+#amusementpark {
 	margin-top: 5%;
 }
 
@@ -536,6 +538,7 @@ a {
 .cardamusementpark-image {
 	grid-area: image;
 	background: url("");
+	padding: 5% 5% 0 5%;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	background-size: cover;
@@ -551,9 +554,91 @@ a {
 .cardamusementpark:hover {
 	transform: scale(1.07);
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	background: rgba(253, 157, 130, 0.941);
 }
 
 
+#downloadmanager {
+	margin-top: 5%;
+}
+
+.carddownloadmanager {
+	display: grid;
+	margin: 0 60% 0 0;
+	grid-template-columns: 2;
+	grid-template-rows: 260px 100px;
+	grid-template-areas: "image""text";
+	font-size: 75%;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 10%;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.carddownloadmanager-image {
+	grid-area: image;
+	background: url("");
+	padding: 5% 5% 0 5%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.carddownloadmanager-content {
+	grid-area: text;
+	margin: 25px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.carddownloadmanager:hover {
+	transform: scale(1.07);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	background: rgba(46, 244, 132, 0.6);
+}
+
+#newsletterapp {
+	margin-top: 5%;
+}
+
+.cardnewsletterapp {
+	display: grid;
+	margin: 0 5% 0 50%;
+	grid-template-columns: 2;
+	grid-template-rows: 260px 100px;
+	grid-template-areas: "image""text";
+	font-size: 75%;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 10%;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.cardnewsletterapp-image {
+	grid-area: image;
+	background: url("");
+	padding: 2% 5% 0 5%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.cardnewsletterapp-content {
+	grid-area: text;
+	margin: 25px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.cardnewsletterapp:hover {
+	transform: scale(1.07);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	background: rgba(253, 157, 130, 0.941);
+}
 
 /*Contact Section*/
 
